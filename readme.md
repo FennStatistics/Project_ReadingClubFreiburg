@@ -6,7 +6,7 @@
 
 ## Topics / books under investigation
 
-- [book Farrell & Lewandowsky 2018](#installation): Farrell, S., & Lewandowsky, S. (2018). Computational Modeling of Cognition and Behavior. Cambridge University Press. https://doi.org/10.1017/CBO9781316272503
+- [book Farrell & Lewandowsky 2018](https://github.com/FennStatistics/Project_ReadingClubFreiburg/tree/main/book%20Farrell%20%26%20Lewandowsky%202018): Farrell, S., & Lewandowsky, S. (2018). Computational Modeling of Cognition and Behavior. Cambridge University Press. https://doi.org/10.1017/CBO9781316272503
 - *future topics*
 
 
