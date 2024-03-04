@@ -1,0 +1,115 @@
+
+
+
+body h1, body h2, body h3 {
+  color: #344A9A;
+}
+
+.title-slide {
+  background-color: #344A9A;
+  background-image: url(../IMGs/siegel_A4B1E0.png),
+                    url(../IMGs/20221107-UFR-logo-white-rgb-FFFFFF.png);
+  background-size: 30em, 15em;
+  background-position: bottom right, 4.6% 8%;
+  vertical-align: bottom;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.title-slide h1, .title-slide h2, .title-slide h3 {
+  color: #FFFFFF;
+}
+
+.title-slide h1 {
+  margin-bottom: -20px;
+}
+
+.title-slide h2 {
+  font-size: 38px;
+  margin-bottom: 80px;
+}
+
+.title-slide h3 {
+  font-size: 24px;
+}
+
+.author h3, .institute h3 {
+  line-height: 1;
+  margin-bottom: -15px;
+}
+
+.date h3 {
+  line-height: 1;
+  margin-bottom: 35px;
+}
+
+.inverse {
+  background-color: #A4B1E0;
+  background-image: url(../IMGs/siegel_FFFFFF.png);
+  background-size: 30em;
+  background-position: bottom right;
+  color: #000000;
+  text-shadow: 0 0 0px #333;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #344A9A;
+  text-shadow: 0 0 0px #333;
+}
+
+.remark-slide-number{
+  color: #344A9A;
+  margin-bottom: 15px;
+  margin-right: 43px;
+  opacity: 1;
+}
+
+.remark-slide-content {
+  padding: 16px 64px 10px 61px;
+  width: 100%;
+  height: 100%;
+}
+
+a, a > code {
+  color: #5D6BAD;
+  text-decoration: none;
+}
+
+.remark-code-line-highlighted {
+  background-color: #ffe863;
+}
+
+.hljs-github .hljs .remark-inline-code {
+    color: DimGrey;
+}
+
+blockquote {
+  border-left: solid 5px #A4B1E0;
+  padding-left: 1em;
+}
+
+.remark-code {
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  color: #808080;
+}
+
+.overview::before, .overview::after {
+  content: "";
+  position: absolute;
+  left: 61px;
+  right: 62px;
+  height: 2px;
+  background-color: #344A9A;
+}
+
+.overview::before {
+  top: 17%;
+}
+
+.overview::after {
+  top: 90%;
+}

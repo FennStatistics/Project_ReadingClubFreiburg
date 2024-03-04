@@ -1,0 +1,32 @@
+
+<!-- Written by Garrick Aden-Buie and adapted by Raphael Hartmann -->
+
+<style>
+.logo {
+  background-image: url(IMGs/20221107-UFR-logo-blue-rgb-344A9A.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -3em;
+  left: 3.7%;
+  width: 260px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)' +
+    ':not(.title-slide)' +
+    ':not(.inverse)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
