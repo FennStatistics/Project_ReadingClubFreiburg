@@ -26,7 +26,7 @@ class: title-slide, title-slide
 ### the Reading Club at University of Freiburg
 ]
 .date[
-### Freiburg, 2024-03-04
+### Freiburg, 2024-03-05
 ]
 
 ---
@@ -166,6 +166,9 @@ class: inverse, center, middle
 * communication among scientists resembles a game of “telephone” (also known as “Chinese whispers”), whereby theories and models are formulated by one researcher and recorded on paper before being read by the next scientist(s) who need(s) to understand them. Those new ideas may in turn be recorded in a further paper and so on. Each step in this chain involves cognitive reasoning, and is thus subject to the known limitations of human cognition – from our limited attentional capacity to the confirmation bias, to name but two
   + choice of analogy will affect a scientist’s understanding of her own model – will undoubtedly be compounded when theorizing involves groups of scholars who communicate with each other
 * **using computational models in preference to verbal theorizing**
+
+&lt;br&gt;
+* Annes / Raphaels remark: complex formulas cannot be understood without sufficient training (e.g., in physics or maths to understand the diffusion model) -&gt; both is necessary (model to specify and able to communicate verbally)
   
 &lt;br&gt;
 **Example:**
@@ -215,6 +218,7 @@ for (i in c(1:nreps)) {
 
 
 
+
 ---
 
 ## plot random walk model
@@ -257,7 +261,7 @@ botrt &lt;- latencies[responses&gt;0]; sum(responses&gt;0)
 botprop &lt;- length(botrt)/nreps
 hist(botrt,col="gray",
      xlab="Decision time",xlim=c(0,max(latencies)),
-     main=paste("Bottom responses (",as.numeric(botprop),
+     main=paste("Top responses (",as.numeric(botprop),
                 ") m=",as.character(signif(mean(botrt),4)),
                 sep=""),las=1)
 ```
@@ -384,13 +388,13 @@ hist(botrt,col="gray",
 
 ## consider trial-to-trial variability
 
-**variability in drift rate**
+**variability in drift rate**; Annes remark: in theory discussed as fast error responses (avoidable errors)
 
 
 ```r
 set.seed(222)
 #random walk model with unequal latencies between responses classes
-nreps &lt;- 1000
+nreps &lt;- 10000
 nsamples &lt;- 2000
 
 drift &lt;- 0.03  # 0 = noninformative stimulus; &gt;0 = informative
@@ -427,7 +431,7 @@ toprt &lt;- latencies[responses&gt;0]; sum(responses&gt;0)
 ```
 
 ```
-## [1] 791
+## [1] 7993
 ```
 
 ```r
@@ -452,7 +456,7 @@ botrt &lt;- latencies[responses&lt;0]; sum(responses&lt;0)
 ```
 
 ```
-## [1] 209
+## [1] 2007
 ```
 
 ```r
